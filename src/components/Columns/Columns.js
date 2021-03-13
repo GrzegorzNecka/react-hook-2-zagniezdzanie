@@ -1,36 +1,43 @@
 import React from "react";
 import withCollapse from "./../../hoc/withCollapse";
+import withAuth from "./../../hoc/withAuth";
 
-// columns to element Tips.js
-
-const Columns = ({ isCollapsed, toggle }) => {
+const Columns = ({ isCollapsed, toggle, isAuthorized, toggleAuth }) => {
   return (
     <div className="columns">
       <div className="column">
-        <button onClick={toggle} className=" button is-dark is-large">
-          collapse
+        <p> is Authorized {isAuthorized.toString()}</p>
+
+        <button onClick={toggleAuth} className=" button is-dark is-large">
+          login
         </button>
-        <div className={isCollapsed && `is-Collapsed`}>
-          <div className="column">
-            <div className="notification is-primary">ss</div>
-          </div>
-          <div className="column">
-            <div className="notification is-primary">Second column</div>
-          </div>
-          <div className="column">
-            <div className="notification is-primary">Third column</div>
-          </div>
-          <div className="column">
-            <div className="notification is-primary">Fourth column</div>
-          </div>
-        </div>
+
+        {isAuthorized ? (
+          <>
+            <button onClick={toggle} className=" button is-dark is-large">
+              collapse
+            </button>
+            <div className={isCollapsed && `is-Collapsed`}>
+              <div className="column">
+                <div className="notification is-primary">ss</div>
+              </div>
+              <div className="column">
+                <div className="notification is-primary">Second column</div>
+              </div>
+              <div className="column">
+                <div className="notification is-primary">Third column</div>
+              </div>
+              <div className="column">
+                <div className="notification is-primary">Fourth column</div>
+              </div>
+            </div>{" "}
+          </>
+        ) : (
+          <p> you must authorize</p>
+        )}
       </div>
     </div>
   );
 };
 
-// przed eksportem 
-
-export default withCollapse(Columns);
-
-
+export default withAuth(withCollapse(Columns));

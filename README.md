@@ -1,3 +1,6 @@
-# react-hook-2-zagniezdzanie
+https://eduweb.pl/programowanie-i-www/reactjs/react-techniki-zaawansowane/zagniezdzanie-hoc
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/react-hook-2-zagniezdzanie)
+
+- pliki: 
+  - withAuth
+  - columns
