@@ -1,0 +1,31 @@
+//  https://eduweb.pl/programowanie-i-www/reactjs/react-techniki-zaawansowane/stworzenie-pierwszego-hoc
+
+import React from "react";
+
+const WithCollapse = WrapComponent => {
+  return class WithCollapse extends React.Component {
+    state = {
+      isCollapsed: false
+    };
+
+    toggle = () => {
+      this.setState(prevState => ({
+        isCollapsed: !prevState.isCollapsed
+      }));
+    };
+
+    // z komponentu klasowego zwracam funkcję callback (komponent funkcyjny)
+
+    render() {
+      const { isCollapsed } = this.state;
+
+      return <WrapComponent isCollapsed={isCollapsed} toggle={this.toggle} />;
+    }
+  };
+};
+
+export default WithCollapse;
+
+// w pliku columnns
+
+//export default withCollapse(Columns) że WrapComponent  === Columns
