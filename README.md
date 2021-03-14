@@ -11,3 +11,6 @@ https://eduweb.pl/programowanie-i-www/reactjs/react-techniki-zaawansowane/zagnie
 
     biblioteka recompose:
     https://eduweb.pl/programowanie-i-www/reactjs/react-techniki-zaawansowane/komponowanie-hoc
+
+
+    - czym są hok
