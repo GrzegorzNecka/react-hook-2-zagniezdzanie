@@ -2,5 +2,9 @@ https://eduweb.pl/programowanie-i-www/reactjs/react-techniki-zaawansowane/zagnie
 
 
 - pliki: 
-  - withAuth
-  - columns
+  - hooc:
+    - withAuth
+    - withCollapse
+  inicjalizacja:
+    - columns
+    - itemLists

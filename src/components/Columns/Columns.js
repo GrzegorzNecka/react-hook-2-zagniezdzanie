@@ -41,3 +41,5 @@ const Columns = ({ isCollapsed, toggle, isAuthorized, toggleAuth }) => {
 };
 
 export default withAuth(withCollapse(Columns));
+
+// lepszy zapis jest z bibliotekąrecompose // https://eduweb.pl/programowanie-i-www/reactjs/react-techniki-zaawansowane/komponowanie-hoc
