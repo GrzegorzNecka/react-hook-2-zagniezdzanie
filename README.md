@@ -8,3 +8,6 @@ https://eduweb.pl/programowanie-i-www/reactjs/react-techniki-zaawansowane/zagnie
   inicjalizacja:
     - columns
     - itemLists
+
+    biblioteka recompose:
+    https://eduweb.pl/programowanie-i-www/reactjs/react-techniki-zaawansowane/komponowanie-hoc
