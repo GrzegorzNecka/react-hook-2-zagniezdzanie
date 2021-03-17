@@ -2,7 +2,7 @@ https://eduweb.pl/programowanie-i-www/reactjs/react-techniki-zaawansowane/zagnie
 
 
 - pliki: 
-  - hooc:
+  - hoc:
     - withAuth
     - withCollapse
   inicjalizacja:
@@ -14,3 +14,4 @@ https://eduweb.pl/programowanie-i-www/reactjs/react-techniki-zaawansowane/zagnie
 
 
     - czym są hok
+      - hoc to funkckja przyjmuje jako parametr comonent ... dodaje do niego pewne właściwości i zwraca
