@@ -2,6 +2,8 @@
 
 import React from "react";
 
+//hoc to funkckja przyjmuje jako parametr comonent ... dodaje do niego pewne właściwości i zwraca
+
 const WithCollapse = WrapComponent => {
   return class WithCollapse extends React.Component {
     state = {
